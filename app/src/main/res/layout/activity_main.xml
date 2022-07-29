@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEBEB"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:paddingVertical="20dp"
+        android:text="Ibra Stationery"
+        android:textAlignment="center"
+        android:textColor="#FFEB3B"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <GridView
+        android:id="@+id/grid_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_title"
+        android:numColumns="3"
+        android:padding="3dp"
+        android:scrollbars="none" />
+
+</RelativeLayout>

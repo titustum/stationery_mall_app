@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">StationeryMall</string>
+    <string name="procedure_of_purchasing">Purchase this product through MPesa. \nJust Send money through the paybill below.\n After getting message, enter MPesa transaction code and we will bring product to school!</string>
+</resources>

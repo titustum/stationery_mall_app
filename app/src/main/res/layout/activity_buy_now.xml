@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyNowActivity">
+
+    <TextView
+        android:textSize="20sp"
+        android:background="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingVertical="20dp"
+        android:textColor="#FFEB3B"
+        android:id="@+id/login_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STATIONERY ONLINE MALL"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="10dp"
+        android:paddingBottom="40dp"
+        android:layout_below="@+id/login_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingHorizontal="20dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#4CAF50"
+                android:textSize="16sp"
+                android:text="@string/procedure_of_purchasing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/product_purchased_image"
+                android:layout_marginTop="10dp"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/logo_pic"/>
+
+
+            <TextView
+                android:id="@+id/product_purchased_name"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brown Clipboard"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/product_purchased_price"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ksh 700"/>
+            <TextView
+                android:textColor="#673AB7"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PAYPILL NO: 223344"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/customer_name_editxt"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/phone_number_editxt"
+                android:inputType="phone"
+                android:layout_marginTop="20dp"
+                android:hint="Phone Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/mpesa_code_editxt"
+                android:layout_marginTop="20dp"
+                android:hint="MPesa Message Code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/black"
+                android:text="SUBMIT DETAILS"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:layout_marginBottom="60dp"
+                android:id="@+id/view_purchases_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/teal_700"
+                android:text="View Latest Purchases"
+                android:textColor="#FFEB3B" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
